@@ -1,0 +1,7 @@
+event_manager.registration_form:
+  path: '/registration/{department}'
+  defaults:
+    _form: '\Drupal\event_manager\Form\RegistrationForm'
+    _title: 'Event Registration Form'
+  requirements:
+    _access: 'TRUE'

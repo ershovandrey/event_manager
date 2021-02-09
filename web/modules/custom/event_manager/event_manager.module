@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains event_manager.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function event_manager_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the event_manager module.
+    case 'help.page.event_manager':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Event Manager custom functionality') . '</p>';
+      return $output;
+
+    default:
+  }
+}
